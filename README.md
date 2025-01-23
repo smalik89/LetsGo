@@ -23,6 +23,16 @@ start_lat, start_lon = 40.7128, -74.0060  # New York
 end_lat, end_lon = 42.3601, -71.0589  # Boston
 start_time = pd.to_datetime("2025-01-12 10:00:00").tz_localize('UTC')
 ```
+2. Fetch the weather updates along the route:
+```
+weather_route = get_weather_along_route(start_lat, start_lon, end_lat, end_lon, start_time)
+```
 
+3. Visualize Weather data
+```
+route_map = visualize_route_with_weather(weather_route, start_lat, start_lon)
+route_map.save("route_with_weather_times.html")
+```
+4. Open the generated route_with_weather_times.html file in your browser to view the interactive map.
 
 
