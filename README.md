@@ -35,4 +35,13 @@ route_map.save("route_with_weather_times.html")
 ```
 4. Open the generated route_with_weather_times.html file in your browser to view the interactive map.
 
+## Example Output
+The interactive map shows:
+
+Waypoints along the route, marked with circle markers.
+Weather data (temperature in °F) displayed in a popup at each waypoint.
+Color-coded markers for temperature ranges:
+Blue: Below freezing (< 32°F).
+Green: Mild (32–50°F).
+Red: Warm (> 50°F).
 
